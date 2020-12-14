@@ -18,6 +18,19 @@ Por otro lado, se tiene un programa general también escrito en C que contiene e
 
 # Comparaciones
 
+Por motivos de tiempo no se llegó a completar la tarea de comparación en gráficos. Lo que si se puedo hacer es generar salidas por consola con los tiempos de las funciones enmascarar_c y enmascarar_asm. Los resultados fueron los siguientes:
+
+- 420x236
+
+![](https://raw.githubusercontent.com/gustavoecruz/TP2-OrgaII/main/Comparaciones/420x236.JPG)
+
+- 1280x720
+
+![](https://raw.githubusercontent.com/gustavoecruz/TP2-OrgaII/main/Comparaciones/1280x720.JPG)
+
+- 1821x1024
+
+![](https://raw.githubusercontent.com/gustavoecruz/TP2-OrgaII/main/Comparaciones/1821x1024.JPG)
 
 # Problemas
 
@@ -29,4 +42,8 @@ Este problema se pudo solucionar gracias a la ayuda de los docentes agregando la
 
 ![](https://raw.githubusercontent.com/gustavoecruz/TP2-OrgaII/main/Problemas/salida_asm_ok.JPG)
 
-- Fuera de la implementación, surgieron problemas personales que nos impidieron el avance del desarrollo. Estos sin dudas generaron el retraso de la entrega y la falta de funcionalidad requerida como por ejemplo: la generación de los gráficos comparativos y los threads.
+- Por otro lado, fuera de la implementación, surgieron problemas personales que nos impidieron el avance del desarrollo. Estos sin dudas generaron el retraso de la entrega y la falta de funcionalidad requerida como por ejemplo: la generación de los gráficos comparativos y los threads.
+
+# Conclusión 
+
+En este informe describimos el desarrollo de un programa que cumple con la función de enmascarar dos imágenes. El desarrollo no fue libre de problemas y estos generaron la dificultad de la competitud del mismo. Pero sin dudas, el trabajo realizado permitió expandir ampliamente los conocimientos del lenguaje ensamblador y las ventajas de las instrucciones SIMD.
