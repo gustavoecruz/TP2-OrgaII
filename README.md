@@ -5,7 +5,7 @@ Con el objetivo de comparar la performance de las instrucciones SIMD con las ins
 # Herramientas
 
 Para desarrollar la aplicación se utilizaron las siguentes herramientas:
-- GraphicsMagick: para la conversión de imáganes a extensión RGB
+- GraphicsMagick: para la conversión de imágenes a extensión RGB
 - XnViewMP: para redimensionar las imágenes
 - NASM para assembler
 - GCC para C
@@ -46,7 +46,7 @@ Por motivos de tiempo no se llegó a completar la tarea de comparación en gráf
 
 # Problemas
 
-- A la hora de implementar la función de enmascarar_asm se obtuvo un primero resultado no del todo satisfactorio. En la imagen de salida se podía oberservar las imágenes bien combinadas por la máscara pero también, por diferentes lugares, se podían observar pequeños pixeles azules que no pertenecían a ninguna de las dos imágenes.
+- A la hora de implementar la función de enmascarar_asm se obtuvo un primer resultado no del todo satisfactorio. En la imagen de salida se podía oberservar las imágenes bien combinadas por la máscara pero también, por diferentes lugares, se podían observar pequeños pixeles azules que no pertenecían a ninguna de las dos imágenes.
 
 ![](https://raw.githubusercontent.com/gustavoecruz/TP2-OrgaII/main/Problemas/salida_asm.JPG)
 
