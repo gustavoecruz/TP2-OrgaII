@@ -16,6 +16,9 @@ El desarrollo de la aplicación cuenta con 3 partes importantes que se pueden di
 
 Por otro lado, se tiene un programa general también escrito en C que contiene estas funciones mencionadas. Primero el programa se ejecuta pasándole como parámetros las imágenes a combinar, la máscara y el ancho y alto de las mismas. Una vez guardado los parámetros se llama a la función de lectura de los archivos RGB que se encargará de guardar en el buffer los datos correspondientes. Luego se ejecuta la función de enmascarar (_c o _asm) y por último se genera un nuevo archivo de salida (_c o _asm) con la información almacenada en el buffer.
 
+Para la conversión de imágenes se usó el siguiente comando:
+gm convert imgX.jpg imgX.rgb
+
 # Resultados
 
 Luego de generar la funcionalidad correspondiente para aplicar la máscara a las imágenes, se obtuvo el siguiente resultado en general para todas las dimensiones
