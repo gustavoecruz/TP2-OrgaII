@@ -23,10 +23,10 @@ Por otro lado, se tiene un programa general también escrito en C que contiene e
 
 - A la hora de implementar la función de enmascarar_asm se obtuvo un primero resultado no del todo satisfactorio. En la imagen de salida se podía oberservar las imágenes bien combinadas por la máscara pero también, por diferentes lugares, se podían observar pequeños pixeles azules que no pertenecían a ninguna de las dos imágenes.
 
-![](https://raw.githubusercontent.com/gustavoecruz/TP2-OrgaII/tree/main/Problemas/salida_asm.JPG)
+![](https://raw.githubusercontent.com/gustavoecruz/TP2-OrgaII/main/Problemas/salida_asm.JPG)
 
 Este problema se pudo solucionar gracias a la ayuda de los docentes agregando la instrucción: PXOR XMM0, XMM2.
 
-![](https://raw.githubusercontent.com/gustavoecruz/TP2-OrgaII/blob/main/Problemas/salida_asm.JPG)
+![](https://raw.githubusercontent.com/gustavoecruz/TP2-OrgaII/main/Problemas/salida_asm_ok.JPG)
 
 - Fuera de la implementación, surgieron problemas personales que nos impidieron el avance del desarrollo. Estos sin dudas generaron el retraso de la entrega y la falta de funcionalidad requerida como por ejemplo: la generación de los gráficos comparativos y los threads.
