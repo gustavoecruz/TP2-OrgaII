@@ -16,6 +16,18 @@ El desarrollo de la aplicación cuenta con 3 partes importantes que se pueden di
 
 Por otro lado, se tiene un programa general también escrito en C que contiene estas funciones mencionadas. Primero el programa se ejecuta pasándole como parámetros las imágenes a combinar, la máscara y el ancho y alto de las mismas. Una vez guardado los parámetros se llama a la función de lectura de los archivos RGB que se encargará de guardar en el buffer los datos correspondientes. Luego se ejecuta la función de enmascarar (_c o _asm) y por último se genera un nuevo archivo de salida (_c o _asm) con la información almacenada en el buffer.
 
+# Resultados
+
+Luego de generar la funcionalidad correspondiente para aplicar la máscara a las imágenes, se obtuvo el siguiente resultado en general para todas las dimensiones
+
+- Salida de enmascarar_c
+
+![](https://raw.githubusercontent.com/gustavoecruz/TP2-OrgaII/main/Resultado/salida_c.JPG)
+
+- Salida de enmascarar_asm
+
+![](https://raw.githubusercontent.com/gustavoecruz/TP2-OrgaII/main/Resultado/salida_asm.JPG)
+
 # Comparaciones
 
 Por motivos de tiempo no se llegó a completar la tarea de comparación en gráficos. Lo que si se puedo hacer es generar salidas por consola con los tiempos de las funciones enmascarar_c y enmascarar_asm. Los resultados fueron los siguientes:
@@ -32,18 +44,6 @@ Por motivos de tiempo no se llegó a completar la tarea de comparación en gráf
 
 ![](https://raw.githubusercontent.com/gustavoecruz/TP2-OrgaII/main/Comparaciones/1821x1024.JPG)
 
-# Resultados
-
-Luego de generar la funcionalidad correspondiente para aplicar la máscara a las imágenes, se obtuvo el siguiente resultado en general para todas las dimensiones
-
-- Salida de enmascarar_c
-
-![](https://raw.githubusercontent.com/gustavoecruz/TP2-OrgaII/main/Resultado/salida_c.JPG)
-
-- Salida de enmascarar_asm
-
-![](https://raw.githubusercontent.com/gustavoecruz/TP2-OrgaII/main/Resultado/salida_asm.JPG)
-
 # Problemas
 
 - A la hora de implementar la función de enmascarar_asm se obtuvo un primero resultado no del todo satisfactorio. En la imagen de salida se podía oberservar las imágenes bien combinadas por la máscara pero también, por diferentes lugares, se podían observar pequeños pixeles azules que no pertenecían a ninguna de las dos imágenes.
@@ -58,4 +58,4 @@ Este problema se pudo solucionar gracias a la ayuda de los docentes agregando la
 
 # Conclusión 
 
-En este informe describimos el desarrollo de un programa que cumple con la función de enmascarar dos imágenes. El desarrollo no fue libre de problemas y estos generaron la dificultad de la competitud del mismo. Pero sin dudas, el trabajo realizado permitió expandir ampliamente los conocimientos del lenguaje ensamblador y las ventajas de las instrucciones SIMD.
+En este informe describimos el desarrollo de un programa que cumple con la función de enmascarar dos imágenes. El desarrollo no fue libre de problemas y estos generaron la dificultad de la competitud del mismo. Pero sin dudas, el trabajo realizado permitió expandir ampliamente los conocimientos del lenguaje ensamblador y las ventajas de las instrucciones SIMD. Se pudo observar que las instrucciones SIMD de assembler tienen mejores tiempos de respuestas que las de c. Además en los resultados también se identifica como en salida_asm los bordes de la máscara están menos pixelados a comparación de salida_c. A favor de c, queda inconcluso que hubiese pasado si las funciones se implementaban con hilos. 
