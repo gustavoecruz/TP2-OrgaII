@@ -48,6 +48,7 @@ int main(int argc, char *argv[]) {
 		unsigned char *bufferMask = malloc(cant);
 		double tiempoC;
 		double tiempoAsm;
+		printf ("%d x %d \n", ancho, alto);
 
 		//leo los archivos
 		readRGB(img1, bufferImg1, cant);
