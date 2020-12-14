@@ -32,6 +32,18 @@ Por motivos de tiempo no se llegó a completar la tarea de comparación en gráf
 
 ![](https://raw.githubusercontent.com/gustavoecruz/TP2-OrgaII/main/Comparaciones/1821x1024.JPG)
 
+# Resultados
+
+Luego de generar la funcionalidad correspondiente para aplicar la máscara a las imágenes, se obtuvo el siguiente resultado en general para todas las dimensiones
+
+- Salida de enmascarar_c
+
+![](https://raw.githubusercontent.com/gustavoecruz/TP2-OrgaII/main/Resultado/salida_c.JPG)
+
+- Salida de enmascarar_asm
+
+![](https://raw.githubusercontent.com/gustavoecruz/TP2-OrgaII/main/Resultado/salida_asm.JPG)
+
 # Problemas
 
 - A la hora de implementar la función de enmascarar_asm se obtuvo un primero resultado no del todo satisfactorio. En la imagen de salida se podía oberservar las imágenes bien combinadas por la máscara pero también, por diferentes lugares, se podían observar pequeños pixeles azules que no pertenecían a ninguna de las dos imágenes.
